@@ -1,5 +1,11 @@
 import React, { useEffect } from "react";
 
+/**
+ * Hook implements logic for
+ * clicking outside the element
+ * @param {React.RefObject<HTMLElement>[]} refs - references to be listened
+ * @param handler - function of action if click outside the element ocurred
+ */
 const useOnClickOutside = (
   refs: React.RefObject<HTMLElement>[],
   handler: () => void
